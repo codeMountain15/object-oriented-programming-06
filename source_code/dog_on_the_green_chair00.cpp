@@ -16,7 +16,7 @@ public:
 	string get_name() { return name; }
 };
 
-void human_dog_interaction(Dog* a) {
+void ask_Christina(Dog* a) {
 	cout << a->get_name() << " is on the green chair!\n";
 };
 
@@ -27,15 +27,15 @@ int main() {
 	Dog my_dog3 = Dog("Ritsa");
 
 	Dog* pointer_to_dog;
-	
+
 	pointer_to_dog = &my_dog1;
-	human_dog_interaction(pointer_to_dog);
+	ask_Christina(pointer_to_dog);
 
 	pointer_to_dog = &my_dog2;
-	human_dog_interaction(pointer_to_dog);
+	ask_Christina(pointer_to_dog);
 
 	pointer_to_dog = &my_dog3;
-	human_dog_interaction(pointer_to_dog);
+	ask_Christina(pointer_to_dog);
 
 	return 0;
 }
