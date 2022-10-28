@@ -6,7 +6,7 @@
 - [ ] ...
 
 
-...under contrunction!
+...under construnction!
 
 ## Πηγές
 * [cgi.di.uoa.gr/~izambo/oop.html](https://cgi.di.uoa.gr/~izambo/oop.html)
