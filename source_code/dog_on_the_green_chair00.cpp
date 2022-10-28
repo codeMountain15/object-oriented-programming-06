@@ -5,7 +5,6 @@
 using namespace std;
 
 class Dog {
-
 	string name;
 
 public:
@@ -15,12 +14,10 @@ public:
 	void time_for_walk() { cout << endl << name << ": " << "\nIt's time for cat-chase!!!\n"; }
 	void bark() { cout << endl << name << ": " << "\nWow wow wow wow\n"; }
 	string get_name() { return name; }
-
 };
 
 void human_dog_interaction(Dog* a) {
 	cout << a->get_name() << " is on the green chair!\n";
-
 };
 
 int main() {
