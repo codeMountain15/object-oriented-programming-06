@@ -13,7 +13,7 @@ public:
 	Dog(string nm) { name = nm; }
 
 	void time_for_walk() { cout << endl << name 
-		<< ": Yeah!"
+		<< ": Yeah! "
 		<<"It's time for cat-chase!!!\n"; }
 	void bark() { cout << endl << name << ": " 
 		<< "Wow wow wow wow\n"; }
