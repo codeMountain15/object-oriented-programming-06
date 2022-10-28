@@ -9,16 +9,18 @@ int main()
 {
 	int a = 1;
 	int b = 2;
-	int* a1;
+	int* p1;
 	
-	a1 = &a;
-	cout << "*a1 = " << *a1 << endl;
+	p1 = &a;
+	cout << "*p1 = " << *p1 << endl;
 
-	a1 = &b; // pointer change
-	cout << "*a1 = " << *a1 << endl;
+	p1 = &b; // pointer change
+	cout << "*p1 = " << *p1 << endl;
 
-	b = 3; // value change
-	cout << "*a1 = " << *a1 << endl;
+	*p1 = 3; // value change
+	cout << "*p1 = " << *p1 << endl;
+
+	cout << " b = " << b << endl;
 
 	return 0;
 }
