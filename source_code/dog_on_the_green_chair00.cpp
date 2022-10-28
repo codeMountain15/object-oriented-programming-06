@@ -26,16 +26,16 @@ int main() {
 	Dog my_dog2 = Dog("Tolis");
 	Dog my_dog3 = Dog("Ritsa");
 
-	Dog* pointer_to_the_green_chair; 
+	Dog* pointer_to_dog;
 	
-	pointer_to_the_green_chair = &my_dog1;
-	human_dog_interaction(pointer_to_the_green_chair);
+	pointer_to_dog = &my_dog1;
+	human_dog_interaction(pointer_to_dog);
 
-	pointer_to_the_green_chair = &my_dog2;
-	human_dog_interaction(pointer_to_the_green_chair);
+	pointer_to_dog = &my_dog2;
+	human_dog_interaction(pointer_to_dog);
 
-	pointer_to_the_green_chair = &my_dog3;
-	human_dog_interaction(pointer_to_the_green_chair);
+	pointer_to_dog = &my_dog3;
+	human_dog_interaction(pointer_to_dog);
 
 	return 0;
 }
