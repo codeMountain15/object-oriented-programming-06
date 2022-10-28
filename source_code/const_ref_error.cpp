@@ -27,7 +27,7 @@ int main() {
     s1.name = "Takis";
     s1.id = "131";
 
-    //change_attempt(s1);
+    change_attempt(s1);  // error
 
     print(s1);
 
