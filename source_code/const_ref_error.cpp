@@ -17,7 +17,7 @@ void change_attempt(const Student& s){    // error...
     s.id = "007";
 }
 
-void print(const Student& s) {    // error...
+void print(const Student& s) {    // ok!
     cout << s.name << endl << s.id << endl;
 }
 
