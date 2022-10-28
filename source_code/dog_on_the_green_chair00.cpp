@@ -1,4 +1,4 @@
-// dog_on_the_chair00.cpp
+// dog_on_the_green_chair00.cpp
 //
 
 #include <iostream>
