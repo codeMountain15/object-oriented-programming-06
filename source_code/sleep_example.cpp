@@ -7,8 +7,6 @@
 
 using namespace std;
 
-
-
 int main()
 {
 	using namespace chrono_literals; // for the time pace
