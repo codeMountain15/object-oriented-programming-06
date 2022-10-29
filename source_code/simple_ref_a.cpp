@@ -1,4 +1,4 @@
-// simple_ref_a
+// simple_ref_a.cpp
 //
 
 #include <iostream>
