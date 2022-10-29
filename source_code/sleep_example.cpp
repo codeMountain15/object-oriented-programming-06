@@ -12,13 +12,13 @@ using namespace std;
 int main()
 {
 	using namespace std::chrono_literals;  // for the time pace
-										                    // it works for windows
+					      // it works for windows
 
 	int exit = 1;
 
 	while (exit <= 10) {
 
-		std::this_thread::sleep_for(200ms);	// for the time pace
+		std::this_thread::sleep_for(200ms); // for the time pace
 		cout << exit++ << endl;
 	
 	}
