@@ -14,8 +14,8 @@ private:
 	Komvos* right;
 
 public:
-	Komvos(string data_input, Komvos* left_imput = NULL, Komvos* right_input = NULL)
-		:data(data_input), left(left_imput), right(right_input) {}
+	Komvos(string data_input, Komvos* left_input = NULL, Komvos* right_input = NULL)
+		:data(data_input), left(left_input), right(right_input) {}
 	void print_tree_DFS();
 };
 
