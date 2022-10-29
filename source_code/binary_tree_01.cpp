@@ -34,7 +34,7 @@ int main()
 	/* following is the tree visualization
 
 	Hominoidea
-		/ \
+	   / \
 	NULL  NULL
 
 	*/
@@ -43,10 +43,10 @@ int main()
 	root->right = new komvos("Hylobatidae");
 	/* 
 		Hominoidea
-			/	\
+		/	\
 	Hominidae	 Hylobatidae
-		/ \				/ \
-	NULL NULL		  NULL NULL
+	  / \	   	   / \
+	NULL NULL	 NULL NULL
 
 	*/
 
@@ -54,12 +54,12 @@ int main()
 	root->left->right = new komvos("Ponginae");
 	/* 
 			
-				Hominoidea
-				/	\
+			Hominoidea
+			/	\
 		Hominidae	 Hylobatidae
-			/ \				/ \
+		/ \		     / \
 	Homininae Ponginae	  NULL NULL
-		/ \		/ \
+	   / \      / \
 	NULL NULL NULL NULL
 
 
@@ -69,17 +69,15 @@ int main()
 
 	/*
 
-					Hominoidea
-					/	\
+				Hominoidea
+				/	\
 			Hominidae	 Hylobatidae
-				/ \				/ \
+			/ \  		    / \
 		Homininae Ponginae	  NULL NULL
-			/ \		/ \
-		NULL NULL NULL NULL
-		/ \
-	Homini NULL
-	  / \
-	NULL NULL
+		  / \  	     / \
+	     Homini NULL NULL NULL
+	     / \
+	  NULL NULL
 
 	*/
 
@@ -87,19 +85,17 @@ int main()
 
 	/*
 
-						Hominoidea
-						/	\
+					Hominoidea
+					/	\
 				Hominidae	 Hylobatidae
-					/ \				/ \
+				/ \		     / \
 			Homininae Ponginae	  NULL NULL
-				/ \		/ \
-			NULL NULL NULL NULL
+			   / \      / \
+		      Homini NULL NULL NULL
 			/ \
-		Homini NULL
-		  / \
-		Homo NULL
-		/ \
-	 NULL NULL
+		     Homo NULL
+		      / \
+		   NULL NULL
 
 	*/
 
