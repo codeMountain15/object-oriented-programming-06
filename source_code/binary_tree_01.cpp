@@ -18,6 +18,12 @@ public:
 		left = NULL;
 		right = NULL;
 	}
+
+	~komvos()
+	{
+		cout << data << " was freed" << endl;
+	}
+
 };
 
 int main()
@@ -41,7 +47,7 @@ int main()
 
 	root->left = new komvos("Hominidae");
 	root->right = new komvos("Hylobatidae");
-	/* 
+	/*
 		Hominoidea
 		/	\
 	Hominidae	 Hylobatidae
@@ -52,8 +58,8 @@ int main()
 
 	root->left->left = new komvos("Homininae");
 	root->left->right = new komvos("Ponginae");
-	/* 
-			
+	/*
+
 			Hominoidea
 			/	\
 		Hominidae	 Hylobatidae
@@ -75,8 +81,8 @@ int main()
 			/ \  		    / \
 		Homininae Ponginae	  NULL NULL
 		  / \  	     / \
-	     Homini NULL NULL NULL
-	     / \
+		 Homini NULL NULL NULL
+		 / \
 	  NULL NULL
 
 	*/
@@ -91,10 +97,10 @@ int main()
 				/ \		     / \
 			Homininae Ponginae	  NULL NULL
 			   / \      / \
-		      Homini NULL NULL NULL
+			  Homini NULL NULL NULL
 			/ \
-		     Homo NULL
-		      / \
+			 Homo NULL
+			  / \
 		   NULL NULL
 
 	*/
@@ -102,8 +108,14 @@ int main()
 
 	// don't forget to free
 	// the allocated memory
-	
 
+	delete root->left->left->left->left;
+	delete root->left->left->left;
+	delete root->left->right;
+	delete root->left->left;
+	delete root->right;
+	delete root->left;
+	delete root;
 
 	return 0;
 }
