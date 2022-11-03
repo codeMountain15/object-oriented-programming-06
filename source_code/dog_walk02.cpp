@@ -18,11 +18,10 @@ public:
 
 	// void shake_my_tail()
 	// void chase_my_tail()
-
 };
 
 void walk_human_dog_interaction(Dog* a) {
-	cout << "Me: Come on! It's time for a walk.\n";
+	cout << "Me: Come on " << (*a).get_name() << "! It's time for a walk.\n";
 
 };
 
