@@ -20,7 +20,6 @@ public:
 
 int main() {
 
-	//Dog my_dog = Dog("Mourgos");
 	Babushka b1("Babuska #01");
 	Babushka b2("Babuska #02", &b1);
 	Babushka b3("Babuska #03", &b2);
@@ -28,7 +27,6 @@ int main() {
 	cout << b3.get_name() << endl;
 	cout << (b3.get_smaller_B())->get_name() << endl;
 	cout << ((b3.get_smaller_B())->get_smaller_B())->get_name() << endl;
-
 
 	return 0;
 }
