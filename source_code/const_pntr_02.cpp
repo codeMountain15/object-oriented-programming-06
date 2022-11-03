@@ -4,7 +4,6 @@
 #include <iostream>
 using namespace std;
 
-// Driver Code
 int main()
 {
 	int a = 1;
