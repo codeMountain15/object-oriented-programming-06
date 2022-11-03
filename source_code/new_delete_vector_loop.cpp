@@ -1,4 +1,4 @@
-// new_delete_vector_loop.cpp
+// new_delete_for_vector.cpp
 //
 
 #include <iostream>
@@ -16,8 +16,13 @@ public:
 vector<Tiny_Class*> collection;
 
 int main() {
+	
+	int number = 1;
 
-	for (int i = 0; i < 10; i++) {
+	cout << "Give a number (1-10)" << endl;
+	cin >> number;
+
+	for (int i = 1; i <= number; i++) {
 
 		// create new objects dynamically (->heap)
 		Tiny_Class* ptc = new Tiny_Class(i);
