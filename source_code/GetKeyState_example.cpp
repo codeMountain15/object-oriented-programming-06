@@ -20,7 +20,7 @@ int main()
 
 		this_thread::sleep_for(200ms);	// for the time pace
 		
-		if (GetKeyState(VK_NUMPAD0) && 0x8000) // key press
+		if (GetKeyState(VK_NUMPAD0) & 0x8000) // key press
 		{				      // 0x8000 -> key is
 			cout << "\nexit\n";	     // currently pressed
 			exit = 1;
