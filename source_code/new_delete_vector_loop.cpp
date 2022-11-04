@@ -22,7 +22,7 @@ int main() {
 	cout << "Give a number (1-10)" << endl;
 	cin >> number;
 
-	for (int i = 1; i <= number; i++) {
+	for (short int i = 1; i <= number; i++) {
 
 		// create new objects dynamically (->heap)
 		Tiny_Class* ptc = new Tiny_Class(i);
