@@ -16,8 +16,8 @@ public:
 vector<Tiny_Class*> collection;
 
 int main() {
-	
-	int number = 1;
+
+	short int number = 1;
 
 	cout << "Give a number (1-10)" << endl;
 	cin >> number;
@@ -29,7 +29,7 @@ int main() {
 		collection.push_back(ptc);
 	}
 
-	for (auto r = collection.begin(); r != collection.end(); r++){
+	for (auto r = collection.begin(); r != collection.end(); r++) {
 		// delete objects (->heap)
 		delete* r;
 	}
